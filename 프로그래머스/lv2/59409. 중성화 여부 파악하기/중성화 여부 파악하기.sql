@@ -1,5 +1,5 @@
 -- 코드를 입력하세요
-/*
+
 SELECT
     ANIMAL_ID,
     NAME,
@@ -9,8 +9,8 @@ SELECT
     END AS '중성화'
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID;
-*/
 
+/*
 SELECT 
     ANIMAL_ID,
     NAME,
@@ -19,3 +19,4 @@ SELECT
       ) AS '중성화'
 FROM ANIMAL_INS
 ORDER BY ANIMAL_ID;
+*/
