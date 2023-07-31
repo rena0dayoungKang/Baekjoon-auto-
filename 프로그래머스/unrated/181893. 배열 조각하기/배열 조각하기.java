@@ -1,23 +1,33 @@
 import java.util.*;
 class Solution {
     public int[] solution(int[] arr, int[] query) {
-        int[] answer = {};
         
-        List<Integer> list = new ArrayList<>();
-        for (int i = 0 ; i < arr.length; i++) {
-            list.add(arr[i]);
+        List<Integer> arrList = new ArrayList<>();
+        for (int i = 0; i < arr.length; i++) {
+            arrList.add(arr[i]);
         }
         
-        
         for (int i = 0; i < query.length; i++) {
-            if (query[i] % 2 == 0) {
-                list.remove(arr[query[i] + 1]);    
-            } else if (query[i] % 2 == 1) {
-                continue;
+            if (i % 2 == 0) {
+                int n = arrList.size();
+                for (int j = 0; j < n - (query[i] + 1); j++){
+                    arrList.remove(arrList.size() - 1);
+                    //System.out.println(arrList);
+                }
+            } else {
+                for (int j = 0; j < query[i]; j++) {
+                    arrList.remove(0);
+                    //System.out.println(arrList);
+                }
             }
         }
         
-        System.out.println(list);       
+        int[] answer = new int[arrList.size()];
+        for (int i = 0; i < arrList.size(); i++) {
+            answer[i] = arrList.get(i);
+        }
+        
+             
         return answer;
     }
 }
