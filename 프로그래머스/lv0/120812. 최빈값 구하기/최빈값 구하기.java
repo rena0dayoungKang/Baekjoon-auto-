@@ -10,13 +10,13 @@ class Solution {
         for (int number : array) {
             int count = map.getOrDefault(number, 0) + 1;
             if (count > maxCount) {
-                maxCount = count;
+                maxCount = count; 
                 answer = number;
             } else if (count == maxCount) {
                 answer = -1;
             }
             map.put(number, count);
-        }       
+        }      
         return answer;
     }
 }
