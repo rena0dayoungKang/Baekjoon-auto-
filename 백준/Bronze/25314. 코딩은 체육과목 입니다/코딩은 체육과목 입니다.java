@@ -5,9 +5,12 @@ public class Main {
         int N = sc.nextInt();
         int n = N / 4;
         
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            System.out.print("long ");
+            sb.append("long ");
         }     
-        System.out.print("int");
+        sb.append("int");
+        
+        System.out.println(sb.toString());
     }
 }
