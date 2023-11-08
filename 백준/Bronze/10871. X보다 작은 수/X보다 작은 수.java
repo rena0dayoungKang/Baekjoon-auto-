@@ -9,9 +9,10 @@ public class Main{
         int X = Integer.parseInt(inputs[1]);
         String[] inputNums = br.readLine().split(" ");
         
-        for(int i = 0; i < N; i++) {
-            if ((Integer.parseInt(inputNums[i])) < X) {
-                bw.write(inputNums[i] + " ");
+        for(String inputNum : inputNums) {
+            int num = Integer.parseInt(inputNum);
+            if (num < X) {
+                bw.write(inputNum+ " ");
             }
         }
         bw.flush();
