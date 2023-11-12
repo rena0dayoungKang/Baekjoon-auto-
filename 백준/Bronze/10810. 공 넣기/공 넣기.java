@@ -16,7 +16,7 @@ public class Main {
             
             for (int j = I-1; j < J; j++) {
                 baskets[j] = K;
-            }
+            }.  
         }
         
         for (int i = 0; i < N; i++) {
