@@ -9,9 +9,9 @@ public class Main {
             homeworks[submitStd -1] = true;
         }
         
-        for (int i = 0; i < 30; i++) {
-            if (!homeworks[i]) {
-                System.out.println(i+1);
+        for (int i = 1; i < 31; i++) {
+            if (!homeworks[i-1]) {
+                System.out.println(i);
             }
         }
     }
