@@ -8,7 +8,7 @@ public class Main{
         int[] baskets = new int[N];
         
         for (int i = 0; i < N; i++) {
-            baskets[i] = (i+1);
+            baskets[i] = (i+1); 
         }
         
         
