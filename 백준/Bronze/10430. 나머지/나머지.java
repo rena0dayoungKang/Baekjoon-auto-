@@ -4,7 +4,7 @@ public class Main{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String[] inputs = br.readLine().split(" ");
         
-        int A, B, C;
+        int A, B, C; 
         A = Integer.parseInt(inputs[0]);
         B = Integer.parseInt(inputs[1]);
         C = Integer.parseInt(inputs[2]);
