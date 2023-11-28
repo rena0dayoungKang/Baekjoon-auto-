@@ -4,6 +4,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         boolean[] homeworks = new boolean[30];
         
+
         for (int i = 0; i < 28; i++) {
             int submitStd = sc.nextInt();
             homeworks[submitStd -1] = true;
